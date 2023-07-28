@@ -83,3 +83,30 @@
     }
 }
 
+/*! tablet */
+
+@media screen and (min-width: 768px) {
+.container {
+    max-width: 768px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+  /* Header */
+.menu-list {
+    display: flex;
+    gap: 40px;
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+.modal {
+    max-width: 408px;
+    padding: 72px 24px 24px 24px;
+}
