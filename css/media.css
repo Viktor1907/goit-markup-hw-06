@@ -1,0 +1,85 @@
+/*! only phone */
+
+@media screen and (min-width: 350px) and (max-width: 767px) {
+.project-title {
+    font-size: 18px;
+}
+}
+
+@media screen and (max-width: 330px) {
+.tel-contact {
+    font-size: 20px;
+}
+
+.mob-nav-item {
+    font-size: 30px;
+}
+}
+@media screen and (min-width: 331px) and (max-width: 427px) {
+.tel-contact {
+    font-size: 26px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.contacts {
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 428px;
+    padding-top: 24px;
+    padding-bottom: 22px;
+}
+
+.advant-item:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+.team-card:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+.logo-footer {
+    margin-right: 0;
+}
+
+    .subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.subscribe-input {
+    margin-bottom: 16px;
+}
+
+.subscribe-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+.subscribe-label {
+    display: block;
+    text-align: center;
+    }
+}
+

@@ -24,10 +24,14 @@ html {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body {
     font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;    
     background-color:var(--primary-bg-color);
     color: var(--primary-text-color);
 }
@@ -62,7 +66,7 @@ ol {
     width: 100%;
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 
 .section-title {
