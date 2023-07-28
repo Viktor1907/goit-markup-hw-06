@@ -3,128 +3,126 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB STUDIO</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
 </head>
 
 <body>
-    <!--HEADER-->
+    <!-- Header -->
     <header class="header">
         <div class="container header-container">
-            <nav class="header-navigation">
-                <a class="header-logo" href="./index.html">Web<span class="style-logos link">Studio</span></a>
-                <ul class="site-nav list">
-                    <li class="site-item">
-                        <a href="./index.html" class="site-link current link">Studio</a>
+            <nav class="navigation">
+                <a href="./index.html" class="logo link logo-header">Web<span class="logo-black">Studio</span></a>
+                <ul class="list menu-list">
+                    <li class="menu-item">
+                        <a href="./index.html" class="nav-item link current-site">Studio</a>
                     </li>
-                    <li class="site-item">
-                        <a href="./portfolio.html" class="site-link link">Portfolio</a>
+                    <li class="menu-item">
+                        <a href="./portfolio.html" class="nav-item link">Portfolio</a>
                     </li>
-                    <li class="site-item">
-                        <a class="site-link link" href="">Contacts</a>
+                    <li class="menu-item">
+                        <a href="" class="nav-item link">Contacts</a>
                     </li>
                 </ul>
             </nav>
 
-            <address class="adress">
-                <ul class="adress-contacts list">
-                    <li>
-                        <a href="mailto:info@devstudio.com" class="adress-link link">info@devstudio.com</a>
+            <address class="contacts">
+                <ul class="list contact-list">
+                    <li class="contact-item">
+                        <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
                     </li>
-                    <li>
-                        <a href="tel:+110001111111" class="adress-link link">+11
-                            (000) 111-11-11</a>
+                    <li class="contact-item">
+                        <a href="tel:+110001111111" class="contact link">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
+
             <button class="hamburger-btn js-open-menu" type="button">
                 <svg class="hamburger-icon" width="32" height="22">
                     <use href="./images/icons.svg#menu-hamburger"></use>
                 </svg>
             </button>
+        </div>
 
-            <!-- mobile Menu -->
-            <div class="mobile-menu js-menu-container">
-                <div class="mob-menu-content">
-                    <button type="button" class="modal-close-btn menu-close-btn js-close-menu">
-                        <svg class="modal-close-icon" width="8" height="8">
-                            <use href="./images/icons.svg#close-black-18dp-2-1"></use>
-                        </svg>
-                    </button>
+        <!-- mobile Menu -->
+        <div class="mobile-menu js-menu-container">
+            <div class="mob-menu-content">
+                <button type="button" class="modal-close-btn menu-close-btn js-close-menu">
+                    <svg class="modal-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
 
-                    <nav class="mobile-nav">
-                        <ul class="list mob-menu-list">
-                            <li class="mob-menu-item">
-                                <a href="./index.html" class="mob-nav-item link current-site">Studio</a>
+                <nav class="mobile-nav">
+                    <ul class="list mob-menu-list">
+                        <li class="mob-menu-item">
+                            <a href="./index.html" class="mob-nav-item link current-site">Studio</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a href="./portfolio.html" class="mob-nav-item link">Portfolio</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a href="" class="mob-nav-item link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-contacts">
+                    <address class="mob-menu-contacts">
+                        <ul class="list mob-contact-list">
+                            <li class="mob-contact-item">
+                                <a href="tel:+110001111111" class="tel-contact link">+11 (000) 111-11-11</a>
                             </li>
-                            <li class="mob-menu-item">
-                                <a href="./portfolio.html" class="mob-nav-item link">Portfolio</a>
-                            </li>
-                            <li class="mob-menu-item">
-                                <a href="" class="mob-nav-item link">Contacts</a>
+                            <li class="mob-contact-item">
+                                <a href="mailto:info@devstudio.com" class="mail-contact link">info@devstudio.com</a>
                             </li>
                         </ul>
-                    </nav>
+                    </address>
 
-                    <div class="mobile-contacts">
-                        <address class="mob-menu-contacts">
-                            <ul class="list mob-contact-list">
-                                <li class="mob-contact-item">
-                                    <a href="tel:+110001111111" class="tel-contact link">+11 (000) 111-11-11</a>
-                                </li>
-                                <li class="mob-contact-item">
-                                    <a href="mailto:info@devstudio.com" class="mail-contact link">info@devstudio.com</a>
-                                </li>
-                            </ul>
-                        </address>
-
-                        <ul class="list mob-menu-sm">
-                            <li class="sm-item">
-                                <a class="link sm-link" href="">
-                                    <svg class="sm-icon" width="24" height="24">
-                                        <use href="./images/icons.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="sm-item">
-                                <a class="link sm-link" href="">
-                                    <svg class="sm-icon" width="24" height="24">
-                                        <use href="./images/icons.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="sm-item">
-                                <a class="link sm-link" href="">
-                                    <svg class="sm-icon" width="24" height="24">
-                                        <use href="./images/icons.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="sm-item">
-                                <a class="link sm-link" href="">
-                                    <svg class="sm-icon" width="24" height="24">
-                                        <use href="./images/icons.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="list mob-menu-sm">
+                        <li class="sm-item">
+                            <a class="link sm-link" href="">
+                                <svg class="sm-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sm-item">
+                            <a class="link sm-link" href="">
+                                <svg class="sm-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sm-item">
+                            <a class="link sm-link" href="">
+                                <svg class="sm-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sm-item">
+                            <a class="link sm-link" href="">
+                                <svg class="sm-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
-
-
 
     <main class="main">
 
