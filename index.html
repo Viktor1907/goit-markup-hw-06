@@ -127,19 +127,22 @@
     <main class="main">
 
         <!--sectio 1 hero-->
-        <section class="hero">
+        <section class="hero overlay">
             <div class="container">
-                <h1 class="hero-tittle">Effective Solutions for Your Business</h1>
-                <button type="button" class="hero-button btn" data-modal-open>Order Service</button>
+                <h1 class="hero-title">Effective Solutions for Your Business</h1>
+                <button type="button" class="hero-button" data-modal-open>
+                    Order Service
+                </button>
             </div>
         </section>
 
         <!--sectio 2 Advantages-->
-        <section class="advant">
+
+        <section class="advant-section">
             <div class="container">
-                <h2 class="visually-hidden" hidden>Our Advantages</h2>
+                <h2 class="visually-hidden">Our Advantages</h2>
+
                 <ul class="list advant-list">
-                    <!--Feature 1-->
                     <li class="advant-item">
                         <div class="thumb">
                             <svg class="antenna-icon" width="64" height="64">
@@ -147,11 +150,11 @@
                             </svg>
                         </div>
                         <h3 class="advant-undertitle">Strategy</h3>
-                        <p class="advant-text">Our goal is to identify the business
-                            problem to walk away with the perfect and creative solution.
+                        <p class="advant-text">
+                            Our goal is to identify the business problem to walk away with
+                            the perfect and creative solution.
                         </p>
                     </li>
-                    <!--Feature 2-->
                     <li class="advant-item">
                         <div class="thumb">
                             <svg class="clock-icon" width="64" height="64">
@@ -164,7 +167,6 @@
                             within the shortest possible time.
                         </p>
                     </li>
-                    <!--Feature 3-->
                     <li class="advant-item">
                         <div class="thumb">
                             <svg class="diagram-icon" width="64" height="64">
@@ -177,7 +179,6 @@
                             growth opportunities and minimize risk.
                         </p>
                     </li>
-                    <!--Feature 4-->
                     <li class="advant-item">
                         <div class="thumb">
                             <svg class="astronaut-icon" width="64" height="64">
@@ -195,18 +196,39 @@
         </section>
 
         <!--sectio 3 goal-style-->
-        <section class="goal-style">
+        <section class="what-doing-section">
             <div class="container">
-                <h2 class="goal-list">What are we doing</h2>
-                <ul class="list-goal">
-                    <li class="goal-item list">
-                        <img src="./images/jpg1.jpg" alt="comp" width="360" height="300" />
+                <h2 class="section-title">What are we doing</h2>
+                <ul class="list what-doing-list">
+                    <li class="what-doing-item">
+                        <picture>
+                            <source srcset="
+                        ./images/what-doing-section/computer.webp    1x,
+                        ./images/what-doing-section/computer@2x.webp 2x
+                      " media="(min-width: 1440px)" />
+                            <img src="./images/what-doing-section/computer.jpg" alt="IMac" width="360" />
+                        </picture>
                     </li>
-                    <li class="goal-item list">
-                        <img src="./images/jpg2.jpg" alt="tel" width="360" height="300" />
+
+                    <li class="what-doing-item">
+                        <picture>
+                            <source srcset="
+                        ./images/what-doing-section/smartphones.webp    1x,
+                        ./images/what-doing-section/smartphones@2x.webp 2x
+                      " media="(min-width: 1440px)" />
+                            <img src="./images/what-doing-section/phone.jpg" alt="Smartphone" width="360" />
+                        </picture>
                     </li>
-                    <li class="goal-item list">
-                        <img src="./images/jpg3.jpg" alt="nout" width="360" height="300" />
+
+                    <li class="what-doing-item">
+                        <picture>
+                            <source srcset="
+                        ./images/what-doing-section/smartphone-in-hand.webp    1x,
+                        ./images/what-doing-section/smartphone-in-hand@2x.webp 2x
+                      " media="(min-width: 1440px)" />
+                            <img src="./images/what-doing-section/phone-laptop.jpg"
+                                alt="A smartphone in the hand and laptop in the background" width="360" />
+                        </picture>
                     </li>
                 </ul>
             </div>
@@ -217,9 +239,16 @@
         <section class="team-section">
             <div class="container">
                 <h2 class="section-title">Our Team</h2>
-                <ul class="list team-list">
+                <ul class="list team-list tablet-container">
+                    <!--  -->
                     <li class="team-card">
-                        <img src="./images/gallery1.jpg" alt="Guerrero" width="264" height="260" />
+                        <picture>
+                            <source srcset="
+                        ./images/team/pers-one.webp    1x,
+                        ./images/team/pers-one@2x.webp 2x
+                      " />
+                            <img src="./images/person-one.jpg" alt="fist person" width="264" />
+                        </picture>
                         <div class="team-member">
                             <h3 class="team-undertitle">Mark Guerrero</h3>
                             <p class="team-text">Product Designer</p>
@@ -255,8 +284,15 @@
                             </ul>
                         </div>
                     </li>
+                    <!--  -->
                     <li class="team-card">
-                        <img src="./images/gallery2.jpg" alt="Ford" width="264" height="260" />
+                        <picture>
+                            <source srcset="
+                        ./images/team/pers-two.webp    1x,
+                        ./images/team/pers-two@2x.webp 2x
+                      " />
+                            <img src="./images/person-two.jpg" alt="second person" width="264" />
+                        </picture>
                         <div class="team-member">
                             <h3 class="team-undertitle">Tom Ford</h3>
                             <p class="team-text">Frontend Developer</p>
@@ -292,8 +328,15 @@
                             </ul>
                         </div>
                     </li>
+                    <!--  -->
                     <li class="team-card">
-                        <img src="./images/gallery3.jpg" alt="Garcia" width="264" height="260" />
+                        <picture>
+                            <source srcset="
+                        ./images/team/pers-three.webp    1x,
+                        ./images/team/pers-three@2x.webp 2x
+                      " />
+                            <img src="./images/person-three.jpg" alt="third person" width="264" />
+                        </picture>
                         <div class="team-member">
                             <h3 class="team-undertitle">Camila Garcia</h3>
                             <p class="team-text">Marketing</p>
@@ -329,8 +372,15 @@
                             </ul>
                         </div>
                     </li>
+                    <!--  -->
                     <li class="team-card">
-                        <img src="./images/gallery4.jpg" alt="Wilson" width="264" height="260" />
+                        <picture>
+                            <source srcset="
+                        ./images/team/pers-four.webp    1x,
+                        ./images/team/pers-four@2x.webp 2x
+                      " />
+                            <img src="./images/person-four.jpg" alt="fourth person" width="264" />
+                        </picture>
                         <div class="team-member">
                             <h3 class="team-undertitle">Daniel Wilson</h3>
                             <p class="team-text">UI Designer</p>
@@ -371,10 +421,10 @@
         </section>
 
         <!--sectio 5 customers-->
-        <section class="customers">
+        <section class="customers-section">
             <div class="container">
                 <h2 class="section-title">Customers</h2>
-                <ul class="list customers-list">
+                <ul class="list customers-list tablet-container">
                     <li class="customers-item">
                         <a class="link customers-link" href="">
                             <svg class="customers-logo" width="104" height="56">
@@ -421,6 +471,7 @@
             </div>
         </section>
     </main>
+
     <!--footer-->
     <footer class="footer">
         <div class="container footer-container">

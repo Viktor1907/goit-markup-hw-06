@@ -283,6 +283,251 @@ img {
     justify-content: space-between;
 }
 
+/* Hero */
+
+.hero {
+    padding: 112px 0;
+    text-align: center;
+
+    background-color: var(--dark-background);
+}
+
+.overlay {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg/mob-hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bg/mob-hero-bg@2x.webp");
+    }
+}
+
+.hero-title {
+    margin-bottom: 72px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    letter-spacing: 0.02em;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--white-color);
+}
+
+.hero-button {
+    padding: 16px 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: background-color var(--transition);
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--button-hover);
+}
+
+  /* Section Advantages */
+
+.advant-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.advant-item {
+    margin: 0 auto;
+
+    max-width: 396px;
+}
+
+.advant-undertitle {
+    margin-bottom: 8px;
+
+    letter-spacing: 0.02em;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--title-color);
+    text-align: center;
+}
+
+.advant-text {
+    font-weight: 500;
+}
+
+  /* ? ICONS */
+
+.advant-item .thumb {
+    height: 112px;
+    background-color: var(--icon-bg);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+/* Section WhatAreWeDoing, 
+Section Team*/
+
+.what-doing-section {
+    padding-bottom: 120px;
+    display: none;
+}
+.what-doing-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-undertitle {
+    margin-bottom: 8px;
+    text-align: center;
+
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--title-color);
+}
+
+.team-text {
+    text-align: center;
+    margin-bottom: 8px;
+
+    color: var(--text-color);
+}
+
+.team-section {
+    padding: 96px 0;
+    background-color: var(--middle-background);
+}
+
+.team-card {
+    max-width: 264px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: var(--white-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-member {
+    padding: 32px 16px;
+}
+
+  /* ? Sotial networks */
+
+.team-sotialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-sotialmedia-item {
+    width: 40px;
+    height: 40px;
+}
+
+.team-sm-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: var(--icon-bg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color var(--transition);
+}
+
+.sotial-icon {
+    fill: currentColor;
+}
+
+.team-sm-link:is(:hover, :focus) {
+    background-color: var(--button-hover);
+}
+
+  /* Section Customers */
+
+.customers-section {
+    padding: 96px 0;
+}
+
+.customers-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 72px 16px;
+}
+
+.customers-item {
+    max-width: 190px;
+    height: 88px;
+
+    width: calc((100% - 16px) / 2);
+}
+
+.customers-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--customers-logo);
+    border-radius: 4px;
+    color: var(--customers-logo);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: border-color var(--transition), color var(--transition);
+}
+
+.customers-logo {
+    fill: currentColor;
+}
+
+.customers-link:is(:hover, :focus) {
+    border-color: var(--button-hover);
+    color: var(--button-hover);
+}
 
 
 
