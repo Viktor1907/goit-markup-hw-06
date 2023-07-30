@@ -30,8 +30,6 @@
     display: flex;
     justify-content: space-between;
     max-width: 428px;
-    padding-top: 24px;
-    padding-bottom: 22px;
     }
 
 .advant-item:not(:last-child) {
@@ -207,7 +205,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    max-width: 552px;
+    max-width: 582px;
     margin: 0 auto;
     }
 
